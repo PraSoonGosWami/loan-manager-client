@@ -1,0 +1,65 @@
+.loanItemContainer {
+  margin: 12px;
+  font-size: 10px;
+  flex: 1;
+  min-width: 300px;
+}
+.loanItem {
+}
+
+.loanItem > header {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 18px;
+}
+
+.loanItem > header > h6 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2em;
+  font-weight: bold;
+  margin: auto 6px;
+  align-self: center;
+}
+
+.loanItem > header > aside {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.loanItem > main {
+  margin: 16px 6px;
+}
+
+.loanItem > main > section:first-of-type {
+  margin-right: 14px;
+}
+
+.loanItem > footer {
+  margin-top: 12px;
+}
+
+.adminActions {
+  padding: 12px;
+}
+
+.adminActions > section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 20px 12px;
+}
+
+.adminActions > section > button:first-of-type {
+  margin-right: 14px;
+}
+
+@media (max-width: 600px) {
+  .loanItem > main {
+    justify-content: flex-start !important;
+  }
+  .loanItemContainer {
+    margin: 12px 0;
+  }
+}

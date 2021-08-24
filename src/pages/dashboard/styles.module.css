@@ -1,0 +1,23 @@
+.dashboard {
+  min-height: 100vh;
+  position: relative;
+}
+
+.dashboardContent {
+  margin: 32px auto;
+  padding-bottom: 40px;
+  display: flex !important;
+  flex-wrap: wrap;
+}
+
+.fab {
+  position: fixed !important;
+  bottom: 22px;
+  right: 22px;
+}
+
+@media (max-width: 600px) {
+  .dashboardContent {
+    flex-direction: column !important;
+  }
+}

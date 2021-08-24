@@ -1,0 +1,42 @@
+.adminContainer {
+  display: flex !important;
+  margin: 32px auto;
+  justify-content: space-between;
+}
+
+.admins {
+  flex: 30%;
+  position: relative;
+  margin-right: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  height: min-content;
+}
+.admins p {
+  margin: 8px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+}
+.addAdmin {
+  display: flex;
+  align-items: center;
+  margin: 12px 8px;
+}
+.adminContainer > main {
+  flex: 60%;
+  position: relative;
+}
+
+@media (max-width: 950px) {
+  .adminContainer {
+    flex-direction: column;
+  }
+  .admins {
+    flex: 1;
+    margin-right: 0;
+  }
+  .adminContainer > main {
+    flex: 1;
+  }
+}
